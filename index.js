@@ -26,17 +26,17 @@ app.listen(port, () => {
 let posts = [
     {
         id : uuidv4(),
-        username : "apnacollege",
+        username : "Rahul Singh",
         content : 'i love coding!'
     },
     {
         id : uuidv4(),
-        username : 'sachin kumar',
-        content : 'i love Shlee!'
+        username : 'Sachin kumar',
+        content : 'i love Traveling!'
     },
     {
         id : uuidv4(),
-        username : 'sunil chetri',
+        username : 'Sunil chetri',
         content : 'i love football!'
     }
 ];
