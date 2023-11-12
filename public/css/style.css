@@ -59,6 +59,18 @@ img {
 }
 
 
+.txt-ar {
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+    width: 610px;
+}
+
+.txt-in {
+    border-radius: 10px;
+    padding: 8px;
+}
+
 
 a {
     text-decoration: none !important;
