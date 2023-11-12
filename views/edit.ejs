@@ -1,8 +1,4 @@
 <% layout("/layouts/boilerplate.ejs") -%>
-
-    
-    
-
     <div class="navbar1" >
         <span>
             <h2>Edit your post</h2>
@@ -16,7 +12,8 @@
         
     <div class="post">
         <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
-            <textarea name="content"><%= post.content %></textarea>
-            <button>Submit</button>
+            <textarea class="txt-ar" name="content"><%= post.content %></textarea>
+            <br>
+            <button class="btn btn-dark">Submit</button>
         </form>
     </div>
