@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit ejs</title>
-</head>
-<body>
-    <h2>Edit your post</h2>
-    <p>Post id: <%= post.id %> </p>
-    <p>Post username: <%= post.username %> </p>
-    <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
-        <textarea name="content"><%= post.content %></textarea>
-        <button>Submit</button>
-    </form>
-</body>
-</html>
+<% layout("/layouts/boilerplate.ejs") -%>
+
+    
+    
+
+    <div class="navbar1" >
+        <span>
+            <h2>Edit your post</h2>
+            <p>Post id: <%= post.id %></p>
+        </span>
+        <span>
+            <img src="https://api.dicebear.com/avatar.svg" />
+            <%= post.username %>
+        </span>
+    </div>
+        
+    <div class="post">
+        <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+            <textarea name="content"><%= post.content %></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
