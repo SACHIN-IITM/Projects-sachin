@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const ejsMate = require("ejs-mate");
+
 
 const path = require('path');
 
@@ -16,6 +18,7 @@ app.use(methodOverride('_method'));
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.engine("ejs", ejsMate);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -26,7 +29,7 @@ app.listen(port, () => {
 let posts = [
     {
         id : uuidv4(),
-        username : "Rahul Singh",
+        username : "Rahul singh",
         content : 'i love coding!'
     },
     {
